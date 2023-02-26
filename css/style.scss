@@ -1,0 +1,19 @@
+
+
+// map set
+
+$colors: (
+    primary:#5A20CB,
+    accent: #B4161B,
+    font: #fff
+    );
+$sizes: (
+    fontone: 20px,
+    fontzero: 12px
+);
+
+body {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, font);
+    font-size: map-get($sizes, fontone);
+}
