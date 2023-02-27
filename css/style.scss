@@ -2,7 +2,7 @@
 
 $colors: (
   primary: #5a20cb,
-  accent: #b4161b,
+  accent: #120e43,
   font: #fff,
 );
 $sizes: (
@@ -42,7 +42,7 @@ html {
 body {
   margin: 0;
   .container {
-    clip-path: polygon(0 0, 75% 0%, 100% 16%, 89% 99%, 10% 99%, 0% 50%);
+    clip-path: polygon(0 0, 75% 0%, 100% 9%, 93% 99%, 6% 100%, 0% 50%);
     background-color: color(primary);
     width: 100%;
     height: 100%;
@@ -56,8 +56,50 @@ body {
       text-decoration: none;
       font-size: 2rem;
       text-align: center;
-      padding-top: 14px;
+      padding-top: 20px;
       display: block;
+    }
+  }
+
+  main {
+    section#main-image {
+      background-color: color(accent);
+      padding: 20px;
+      color: color(font);
+      margin: 1rem auto;
+      width: 80%;
+      border-radius: 20px;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      margin-bottom: -15px;
+    }
+
+    section#main-button {
+      text-align: center;
+      color: color(font);
+      padding: 15px;
+
+      h1 {
+        font-size: 1.8rem;
+        margin-top: 5px;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+      }
+      a {
+        color: color(font);
+        margin-top: 15px;
+        background-color: color(accent);
+        padding: 5px;
+        text-decoration: none;
+        font-size: 1.5em;
+        border-radius: 5px;
+      }
     }
   }
 }

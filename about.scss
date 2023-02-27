@@ -1,0 +1,26 @@
+@import "mixins";
+@import "btn";
+
+html {
+  height: 100vh;
+  @include coverimage("images/cover.jpeg");
+}
+
+body {
+  h1 {
+    color: #f7cd2e;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3rem;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .container {
+    text-align: center;
+  }
+}
